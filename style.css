@@ -3,18 +3,21 @@
   margin: 0;
   box-sizing: border-box;
   font-family: inter;
-  overflow: hidden;
 }
 
 body {
   padding: 20px 40px;
   background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .c1 {
   background-color: rgba(0, 255, 255, 0.26);
   backdrop-filter: blur(40px);
-  position: relative;
+
   border-radius: 16px;
   overflow: hidden;
   border: none;
@@ -22,7 +25,7 @@ body {
 .c2 {
   background-color: rgba(255, 208, 0, 0.26);
   backdrop-filter: blur(40px);
-  position: relative;
+
   border-radius: 16px;
   overflow: hidden;
   border: none;
@@ -30,7 +33,6 @@ body {
 .c3 {
   background-color: rgba(255, 0, 255, 0.26);
   backdrop-filter: blur(40px);
-  position: relative;
   border-radius: 16px;
   overflow: hidden;
   border: none;
@@ -112,4 +114,10 @@ button:hover {
 }
 .btn-glow1:hover {
   background-color: rgba(0, 255, 255, 0.616);
+}
+
+@media only screen and (max-width: 600px) {
+  .card-holder {
+    flex-direction: column;
+  }
 }
