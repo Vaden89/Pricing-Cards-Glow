@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inter;
+  overflow: hidden;
+}
+
+body {
+  padding: 20px 40px;
+  background-color: #0d0d0d;
+}
+
+.c1 {
+  background-color: rgba(0, 255, 255, 0.26);
+  backdrop-filter: blur(40px);
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: none;
+}
+.c2 {
+  background-color: rgba(255, 208, 0, 0.26);
+  backdrop-filter: blur(40px);
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: none;
+}
+.c3 {
+  background-color: rgba(255, 0, 255, 0.26);
+  backdrop-filter: blur(40px);
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: none;
+}
+
+.card-holder {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  color: #f5f5f5;
+}
+
+.card {
+  overflow: hidden;
+  background-color: #262626;
+  padding: 10px;
+  border: 0.5px solid #737372;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 370px;
+  padding: 24px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 13px;
+
+  bottom: 20px;
+  height: 30px;
+  width: 223.5px;
+  background-color: black;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 8px;
+}
+
+p {
+  z-index: 10;
+}
+
+.spacing {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn-glow1 {
+  border-radius: 8px;
+  transition: background-color 0.5s ease-in-out;
+}
+.btn-glow2 {
+  background-color: rgba(255, 208, 0, 0.616);
+  border-radius: 8px;
+}
+.btn-glow3 {
+  background-color: rgba(255, 0, 255, 0.616);
+  border-radius: 8px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.btn-glow1:hover {
+  background-color: rgba(0, 255, 255, 0.616);
+}
